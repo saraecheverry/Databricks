@@ -86,6 +86,11 @@ display(df_archivo_filtrado)
 
 # COMMAND ----------
 
+from pyspark.sql.functions import col#, rand
+display(df_archivo_filtrado.filter(col("Quantity") > 6))
+
+# COMMAND ----------
+
 # MAGIC %md
 # MAGIC #### Tabla Spark
 # MAGIC Si tenemos creadas [tablas](https://docs.databricks.com/data/tables.html) en Databricks, podemos crear un DataFrame a partir de estas.    
@@ -129,6 +134,14 @@ display(df.drop("Quantity"))
 
 # Ordenado
 display(df.sort(col("monto").desc()))
+
+# COMMAND ----------
+
+df_monto.show()
+
+# COMMAND ----------
+
+spark_df.filter(col("price") > 0)
 
 # COMMAND ----------
 

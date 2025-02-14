@@ -48,7 +48,7 @@ CREATE TABLE [ IF NOT EXISTS ] esquema_tabla.nombre_tabla
 
 -- COMMAND ----------
 
--- drop table datalytics_databricks.online_retail;
+drop table datalytics_databricks.online_retail;
 CREATE TABLE datalytics_databricks.online_retail
 USING csv
 OPTIONS (header="true",inferschema="true")
