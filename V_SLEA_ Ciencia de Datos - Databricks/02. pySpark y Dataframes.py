@@ -50,6 +50,14 @@ df_manual.printSchema()
 
 # COMMAND ----------
 
+df_manual.stats()
+
+# COMMAND ----------
+
+df_manual.summary()
+
+# COMMAND ----------
+
 # MAGIC %md
 # MAGIC ####Lectura de un archivo
 # MAGIC Leemos un csv de un repositorio público. Veremos más detalles del mismo, y de las opciones que utilizamos a continuación, en el próximo módulo.
